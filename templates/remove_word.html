@@ -1,0 +1,23 @@
+{% include 'header.html' %}
+
+<div class="container" role="main">
+    <div class="container" style="min-height:20em">
+        <div class="jumbotron">
+            <h1>Remove word</h1>
+        </div>
+
+        <div>
+            {% include 'remove_word_help.html' %}
+        </div>
+
+        <div>
+            {% if check_result == False %}
+                <h4 class="flash-red">Word '{{ remove_input.lower() }}' was NOT found in dictionary</h2>
+            {% elif check_result == True %}
+                <h4 class="flash-green">Word '{{ remove_input.lower() }}' successfully removed from dictionary</h2>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}

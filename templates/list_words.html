@@ -1,0 +1,34 @@
+{% include 'header.html' %}
+
+<div class="container" role="main">
+    <div class="container" style="min-height:20em">
+        <div class="jumbotron">
+            <h1>List words</h1>
+        </div>
+
+        <div>
+            <h2>The dictionary contains {{ word_count }} words</h2>
+        </div>
+
+        <div class="list_words-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Letter</th>
+                        <th>Word</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for word in sorted_updated_word_list %}
+                        <tr>
+                            <td>{{ word[0].upper() }}</td>
+                            <td>{{ word }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}

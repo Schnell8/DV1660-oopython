@@ -1,0 +1,18 @@
+{% include 'header_cut.html' %}
+
+<div class="container" role="main">
+    <div class="container" style="min-height:20em">
+        <div class="jumbotron">
+            <h1>Home</h1>
+        </div>
+        <div>
+            <form role="form" method="POST" action="{{ url_for('init') }}">
+                <div class="init">
+                    <button type="submit" class="btn">Go to spellchecker</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}

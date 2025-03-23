@@ -1,0 +1,84 @@
+body {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.flash-red {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.flash-green {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4CAF50;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.list_words-table th:nth-child(1) {
+    width: 10%;
+}
+
+/* Button style */
+.btn {
+    width: 264px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn:disabled {
+    opacity: 0.65;
+    pointer-events: none;
+}

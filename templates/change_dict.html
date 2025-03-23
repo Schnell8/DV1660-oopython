@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+
+<div class="container" role="main">
+    <div class="container" style="min-height:20em">
+        <div class="jumbotron">
+            <h1>Change dictionary</h1>
+        </div>
+
+        <div>
+            <p>Current dictionary: {{ current_dict.rsplit("/", 1)[-1] }}</p>
+            <form role="form" method="POST" action="{{ url_for('change_dict_help') }}">
+                <label for="dict_options">Choose dictionary:</label>
+                <select id="dict_options" name="selected_dict">
+                    {% for dict in dict_list %}
+                        <option value="{{ dict }}">{{ dict.rsplit("/", 1)[-1] }}</option>
+                    {% endfor %}
+                </select>
+                <br>
+                <button type="submit" class="btn">Change</button>
+                <br>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+{% include 'footer.html' %}
